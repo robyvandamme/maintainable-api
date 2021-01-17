@@ -348,3 +348,14 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# JetBrains IDE directory
+.idea/
+
+# VSCode
+# https://stackoverflow.com/questions/51876769/should-you-commit-vscode-symbols-file-to-source-control
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
