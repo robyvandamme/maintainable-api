@@ -37,11 +37,8 @@ namespace Maintainable.Api
         {
             app.UseMiddleware<ExceptionHandlerMiddleware>();
 
-            if (env.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api v1"));
-            }
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api v1"));
 
             app.UseSerilogRequestLogging();
 
